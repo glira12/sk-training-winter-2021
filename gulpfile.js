@@ -74,5 +74,7 @@ function images() {
 
 
     
-    exports.build = series(cleandist, cleanimg, styles, images, buildcopy);
+    // exports.build = series(cleandist, cleanimg, styles, images, buildcopy);
+    
+    exports.build = series(cleandist, styles, buildcopy);
     exports.default = parallel(browsersync, startWatch);
