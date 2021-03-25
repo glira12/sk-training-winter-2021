@@ -1,0 +1,17 @@
+@function setcolor($clr){
+    @return $clr;
+}
+div{
+    background-color: setcolor(gray);
+    
+
+}
+.box{
+    // background-color: yellow;
+    // my description
+
+}
+
+@for $i from 1 through 12{
+    .cox-lg-#{$i} {width: $i;}
+}
